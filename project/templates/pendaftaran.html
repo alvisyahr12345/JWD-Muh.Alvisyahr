@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog Home - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='css/styles.css')}}" rel="stylesheet" />
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Unjaya</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pendaftar">Pendaftar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder">Form Pendaftaran</h1>
+                    <p class="lead mb-0">Junior Web Developer</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container d-flex justify-content-center">
+            <div class="w-70">
+
+                <form action="/pendaftaran" method="post">
+
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama Lengkap</label>
+                    <input required name="nama" type="text" class="form-control" id="nama">
+                </div>
+                <div class="mb-3">
+                    <label for="nik" class="form-label">NIK</label>
+                    <input required name="nik" type="number" class="form-control" id="nik">
+                </div>
+                <div class="mb-3">
+                    <label for="wa" class="form-label">Whatsapp</label>
+                    <input required name="wa" type="number" class="form-control" id="wa">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input required name="email" type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pelatihan" class="form-label">Pelatihan</label>
+                    <div class="form-group">
+                        <select class="form-control" name="pelatihan" id="bootstrap-dropdown">
+                            <option value="Junior Web Developer">Junior Web Developer</option>
+                            <option value="Data Scients">Data Scients</option>
+                            <option value="Android Developer">Android Developer</option>
+                            <option value="Video Editor">Video Editor</option>
+                            <option value="Animator">Animator</option>
+                            <option value="Content Creator">Content Creator</option>
+                            <option value="Enterprise Resource Planning">Enterprise Resource Planning</option>
+                            <option value="Desain Grafis">Desain Grafis</option>
+                            <option value="Teknisi Jaringan">Teknisi Jaringan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="mb-5 btn btn-primary">Submit</button>
+                </div>
+
+            </form>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

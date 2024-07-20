@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog Home - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='css/styles.css')}}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Unjaya</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('pendaftar') }}">Pendaftar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder">Jenderal Achmad Yani Yogyakarta</h1>
+                    <p class="lead mb-0">Junior Web Developer</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container">
+            <h5>Program Pelatihan Yang Tersedia: </h5>
+            <div class="container mt-5">
+                <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <img height="200" src="{{ url_for('static', filename='images/pelatihan/webdevelop.jpg') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-title text-center">Junior Web Developer</p>
+                        <p class="card-text text-center">Pelatihan Junior Web Developer dirancang untuk membekali peserta dengan keterampilan dasar yang dibutuhkan untuk memulai karier dalam pengembangan web. </p>
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <a href="{{ url_for('pendaftaran') }}" type="button"  class="btn btn-primary w-100">Daftar</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <img height="200" src="{{ url_for('static', filename='images/pelatihan/datasience.jpg') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-title text-center">Data Scientist</p>
+                        <p class="card-text text-center">Pelatihan Junior Web Developer dirancang untuk membekali peserta dengan keterampilan dasar yang dibutuhkan untuk memulai karier dalam pengembangan web. </p>
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <a href="#" type="button" class="btn btn-primary w-100">Daftar</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <img height="200" src="{{ url_for('static', filename='images/pelatihan/android.jpg') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-title text-center">Android Developer</p>
+                        <p class="card-text text-center">Pelatihan Junior Web Developer dirancang untuk membekali peserta dengan keterampilan dasar yang dibutuhkan untuk memulai karier dalam pengembangan web. </p>
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <a href="#" type="button" class="btn btn-primary w-100">Daftar</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <img height="200" src="{{ url_for('static', filename='images/pelatihan/editor.jpg') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-title text-center">Video Editor</p>
+                        <p class="card-text text-center">Pelatihan Junior Web Developer dirancang untuk membekali peserta dengan keterampilan dasar yang dibutuhkan untuk memulai karier dalam pengembangan web. </p>
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <a href="#" type="button" class="btn btn-primary w-100">Daftar</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <img height="200" src="{{ url_for('static', filename='images/pelatihan/animator.jpg') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-title text-center">Animator</p>
+                        <p class="card-text text-center">Pelatihan Junior Web Developer dirancang untuk membekali peserta dengan keterampilan dasar yang dibutuhkan untuk memulai karier dalam pengembangan web. </p>
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <a href="#" type="button" class="btn btn-primary w-100">Daftar</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <img height="200" src="{{ url_for('static', filename='images/pelatihan/creator.jpg') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-title text-center">Content Creator</p>
+                        <p class="card-text text-center">Pelatihan Junior Web Developer dirancang untuk membekali peserta dengan keterampilan dasar yang dibutuhkan untuk memulai karier dalam pengembangan web. </p>
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <a href="#" type="button" class="btn btn-primary w-100">Daftar</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <img height="200" src="{{ url_for('static', filename='images/pelatihan/erp.png') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-title text-center">Enterprise Resource Planning</p>
+                        <p class="card-text text-center">Pelatihan Junior Web Developer dirancang untuk membekali peserta dengan keterampilan dasar yang dibutuhkan untuk memulai karier dalam pengembangan web. </p>
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <a href="#" type="button" class="btn btn-primary w-100">Daftar</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <img height="200" src="{{ url_for('static', filename='images/pelatihan/desain.jpg') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-title text-center">Desain Grafis</p>
+                        <p class="card-text text-center">Pelatihan Junior Web Developer dirancang untuk membekali peserta dengan keterampilan dasar yang dibutuhkan untuk memulai karier dalam pengembangan web. </p>
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <a href="#" type="button" class="btn btn-primary w-100">Daftar</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                      <img height="200" src="{{ url_for('static', filename='images/pelatihan/teknisi.jpg') }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-title text-center">Teknisi Jaringan</p>
+                        <p class="card-text text-center">Pelatihan Junior Web Developer dirancang untuk membekali peserta dengan keterampilan dasar yang dibutuhkan untuk memulai karier dalam pengembangan web. </p>
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <a href="#" type="button" class="btn btn-primary w-100">Daftar</a>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-primary">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Junior Wev Developer</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <!-- <script src="{{ url_for('static', filename='js/scripts.js') }}"></script> -->
+    </body>
+</html>
